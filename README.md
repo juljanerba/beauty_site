@@ -1,1 +1,1 @@
-# beauty_site
+# example readme
