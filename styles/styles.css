@@ -1,11 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
     padding-top: 50px;
+    line-height: 1.4;
 }
 .center {
     padding-left:  calc(50vw - 555px);
     padding-right: calc(50vw - 555px);
+
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 a:hover,
@@ -18,7 +29,7 @@ a:active {
 }
 
 .btn {
-    padding: 9px;
+    padding: 11px;
     text-align: center;
     color: #fff;
     font-size: 14px;
@@ -28,6 +39,9 @@ a:active {
     cursor: pointer;
     border-radius: 30px;
     min-width: 130px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
 }
 
 .btn--outlined {
@@ -36,7 +50,13 @@ a:active {
     border-color: #F13C6E;
     background-color: transparent;
     color: #000;
-    padding: 10px;
+    font-size: 14px;
+}
+
+
+.btn--white {
+    border-color: #fff;
+    color: #fff;
 }
 
 /*nav*/
@@ -48,6 +68,10 @@ a:active {
     width: 100%;
     padding-top: 17px;
     padding-bottom: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #ffffff;
 }
 
 .nav_list {
@@ -56,15 +80,13 @@ a:active {
     justify-content: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     gap: 30px;
-
 }
+
 .nav_link {
     color:#333;
     text-decoration: none;
 }
-
 /*nav*/
 
 
@@ -75,6 +97,7 @@ a:active {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .contact_phone {
@@ -84,10 +107,284 @@ a:active {
     text-decoration: none;
 }
 
-.btn--outlined {
-    max-width: 170px;
-    font-size: 14px;
-    line-height:1.172;
+
+/*header*/
+
+/*categories*/
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    margin: 0;
 
 }
-/*header*/
+
+.categories_item {
+
+
+
+
+}
+
+.categories_link {
+    font-size: 16px;
+    line-height: 1.168;
+    color: #000000;
+    text-decoration: none;
+}
+/*categories*/
+
+
+/*offer*/
+.offer {
+    padding-top: 192px;
+    padding-bottom: 192px;
+    color: #fff;
+    background-image: url("../img/offer_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offer_title {
+    margin: 0 0 50px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    max-width: 308px;
+    background-position: center;
+
+}
+.offer_desc {
+    margin: 0 0 25px;
+    font-size: 14px;
+    max-width: 308px;
+}
+/*offer*/
+
+
+/*product card*/
+.products {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 38px 10px;
+}
+
+.products_title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 ;
+    width: 100%;
+}
+.products_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 255px;
+    background-color: #fff;
+    padding: 25px 30px;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px
+}
+
+.products_card_img {
+    max-width: 125px;
+    margin: 0;
+
+}
+
+.products_cart_title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.products_card_price {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+/*product card*/
+
+/*pink_card*/
+
+/*bonuses*/
+.pink_cards {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    color: #ffffff;
+
+}
+.bonuses,
+.visit {
+    padding: 35px 45px 35px 40px;
+    box-sizing: border-box;
+    background-color: #F13C6E;
+    width: 540px;
+    background-image: url("../img/envelope.png");
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+    background-position-y: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bonuses_title,
+.visit_title {
+    max-width: 250px;
+    margin: 0 0 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16 ;
+}
+
+.bonuses_desc,
+.visit_desc {
+    margin: 0 0 25px;
+    font-size: 14px;
+    max-width: 129px;
+}
+
+.bonuses_email {
+    margin: 0;
+    max-width: 225px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 25px;
+}
+
+.bonuses_email:active {
+    border: none;
+}
+
+::placeholder {
+    color: #C4C4C4;
+    font-size: 14px;
+}
+
+/*visit*/
+
+.visit {
+    background-image: url("../img/car.png");
+}
+
+.visit .btn {
+    width: 170px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+/*pink_card*/
+
+
+/*logo_block*/
+.logo_block {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo_block_item {
+    background-color: #ffffff;
+    width: 149px;
+    padding: 35px 63px;
+    border: 1px solid #EFEFEF;
+}
+
+/*logo_block*/
+
+/*footer*/
+.footer {
+    background-color: #fff;
+}
+
+.footer_categories {
+    display: flex;
+    gap:30px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.footer_content {
+    width: 255px;
+}
+
+.footer_title {
+    color: #000000;
+    font-size: 16px;
+    width: 99px;
+    margin: 0;
+    padding: 60px 0 30px;
+}
+
+
+.footer_list {
+    border-top: 1px solid #EFEFEF;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px 0 60px;
+}
+
+.footer_link {
+    font-size: 16px;
+    line-height: 2.3;
+    color: #828282;
+    text-decoration: none;
+}
+
+
+.footer_contacts {
+    display: flex;
+    align-items: center;
+    padding: 37px 0;
+}
+
+.footer_social_link {
+    margin-right: 20px;
+}
+
+.footer_social {
+    width: 45px;
+    height: 45px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    background: #EFEFEF ;
+    color: #828282;
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.copyright .link {
+    color: #828282;
+    text-decoration: none;
+}
+
+
+/*footer*/
+
