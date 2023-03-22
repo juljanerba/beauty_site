@@ -42,6 +42,7 @@ a:active {
     display: inline-block;
     text-decoration: none;
     line-height: 1;
+
 }
 
 .btn--outlined {
@@ -148,6 +149,7 @@ a:active {
     background-image: url("../img/offer_img.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #F13C6E;
 }
 
 .offer_title {
@@ -219,7 +221,7 @@ a:active {
 
 /*pink_card*/
 
-/*bonuses*/
+
 .pink_cards {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -230,23 +232,17 @@ a:active {
     color: #ffffff;
 
 }
-.bonuses,
-.visit {
+.bonuses {
     padding: 35px 45px 35px 40px;
     box-sizing: border-box;
     background-color: #F13C6E;
     width: 540px;
-    background-image: url("../img/envelope.png");
-    background-repeat: no-repeat;
-    background-position-x: 88%;
-    background-position-y: 50%;
     display: flex;
     flex-direction: column;
 
 }
 
-.bonuses_title,
-.visit_title {
+.bonuses_title {
     max-width: 250px;
     margin: 0 0 25px;
     font-weight: 700;
@@ -254,8 +250,7 @@ a:active {
     line-height: 1.16 ;
 }
 
-.bonuses_desc,
-.visit_desc {
+.bonuses_desc {
     margin: 0 0 25px;
     font-size: 14px;
     max-width: 129px;
@@ -282,18 +277,15 @@ a:active {
     font-size: 14px;
 }
 
-/*visit*/
 
-.visit {
-    background-image: url("../img/car.png");
+.bonuses .btn {
+    max-width: 170px;
+
 }
 
-.visit .btn {
-    width: 170px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+.bonuses .input {
+    max-width: 225px;
 }
-
 /*pink_card*/
 
 
